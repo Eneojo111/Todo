@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(227, 180, 186); ">
+    <nav>
+        <div style="display: flex; justify-content: space-between;">
+            <div style="display: flex; justify-items: normal; margin-top: 5px;">
+                <div style="border-radius: 100%; border: 1px solid black; height: 60px; width: 60px; margin-top: 10px;">
+                    <img style="height: 60px; width: 60px; border-radius: 100%; border: 0px; "
+                        src="images/portrait dp.jpeg" alt="dp wallper">
+                </div>
+                <h3 style="padding-left: 5px; font-size: 30px; ">Hi User, Welcome</h3>
+            </div>
+            <div style="margin-top: 10px;"> <img
+                    style="height: 30px; width: 30px; margin-right: 10px; margin-top: 10px;  border-radius: 90%; cursor: pointer;"
+                    src="images/notify.png" alt=""> <button class="logoutbutton" 
+                    style="padding: 10px 20px; border-radius: 10px; border: 0; cursor: pointer; ">Logout</button> </div>
+
+        </div>
+
+    </nav>
+    <div class="container" style="background-color: rgb(136, 99, 105); margin-bottom: 10px; margin-top: 10px; ">
+        <h1 style="text-align: center; padding-top: 10px;">My To do List</h1>
+        <div style="text-align: center;">
+
+
+            <form id="todo_form">
+                <input type="text" class="todo_title" placeholder="Enter title" style="width: 300px; height: 30px; ">
+                <div style="text-align: center; margin-top: 30px; "> <textarea class="todo_details"
+                        placeholder="Give a detailed info on your todo..."
+                        style="height: 70px; width: 320px; padding: 15px; margin-left: 25px;"></textarea> </div>
+                <button type="submit"
+                    style="margin-left: 20px; margin-top: 15px; padding: 10px 20px; border-radius: 10px; border: 0; cursor: pointer; margin-bottom: 10px;">Create
+                    Todo</button>
+            </form>
+
+            <div id="todo_list"></div>
+
+
+
+        </div>
+
+        <div class="grid">
+            <div class="todo">
+                <h1 class="" style="padding-left: 5px;"></h1>
+                <p class="" style="padding-left: 5px;"> </p>
+
+                <div class="flex" style="display: flex; justify-content: space-evenly; margin-bottom: 5px;">
+                    <!-- <i class="fa-solid fa-delete-left" ></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <input type="checkbox"> -->
+                </div>
+            </div>
+        </div>
+        <script src="todo.js"></script>
+</body>
+
+</html>
